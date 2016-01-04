@@ -4,8 +4,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
-<<<<<<< HEAD
-=======
 
   test "layout links" do
     get root_path
@@ -15,5 +13,4 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
   end
->>>>>>> filling-in-layout
 end
