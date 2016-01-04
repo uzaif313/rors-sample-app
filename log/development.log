@@ -5038,3 +5038,8 @@ Migrating to AddPasswordDigestToUsers (20160104065820)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('uzaif313@gmail.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "uzaif nilger"], ["email", "uzaif313@gmail.com"], ["password_digest", "$2a$10$1/VOgzq2n8lyqXlHT2c9ced1lGQwBe5tQmqF8w4UqIwpr1KRCKW2."], ["created_at", "2016-01-04 07:27:39.527930"], ["updated_at", "2016-01-04 07:27:39.527930"]]
+  [1m[35m (108.2ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif313@gmail.com"]]
