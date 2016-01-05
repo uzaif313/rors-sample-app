@@ -13,10 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-<<<<<<< HEAD
-=======
 //= require bootstrap
->>>>>>> log-in-log-out
 //= require angular
 //= require script
 //= require_tree .
