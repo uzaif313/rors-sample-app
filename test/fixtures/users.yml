@@ -1,0 +1,4 @@
+uzaif:
+  name:uzaif
+  email:uzaif@gmail.com
+  password_digest:<%= digest('123456') %>
