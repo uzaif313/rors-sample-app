@@ -1,0 +1,6 @@
+<h1>Hi, <b><%= @user.name  %></b></h1>
+<h2>RoRs Sample App</h2>
+<p>
+  Welcome to RoRs Sample App Click on Link Below To Active your Account
+</p>
+<%= link_to "Activate", edit_account_activation_url(@user), class: "btn btn-primary" %>
