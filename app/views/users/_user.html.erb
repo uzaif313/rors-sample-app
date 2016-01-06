@@ -1,0 +1,8 @@
+<li class="list-group-item">
+  <%= gravatar_for user %>
+  <%= link_to user.name.capitalize,user %>
+
+  <% if current_user.admin?  %>
+    <%= link_to "", user, class:"glyphicon glyphicon-trash",method: :delete ,data:{confirm:"Are You Sure You Want To Delete #{user.name}"} %>
+  <% end %>
+</li>

@@ -4,11 +4,6 @@
 </div>
 <%= will_paginate %>
   <ul class="users list-group">
-    <% @users.each do |user| %>
-    <li class="list-group-item">
-       <%= gravatar_for user %>
-      <%= link_to user.name.capitalize,user %>
-    </li>
-    <% end %>
+      <%= render @users %>
   </ul>
 <%= will_paginate %>
