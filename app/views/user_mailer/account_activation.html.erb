@@ -3,4 +3,5 @@
 <p>
   Welcome to RoRs Sample App Click on Link Below To Active your Account
 </p>
-<%= link_to "Activate", edit_account_activation_url(@user), class: "btn btn-primary" %>
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email), class: "btn btn-primary" %>

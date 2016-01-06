@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
 
   def activate
     update_attribute(:activated,true)
-    update_attribute(:activate_at,Time.zone.now)
+    update_attribute(:activated_at,Time.zone.now)
   end
 
   def send_activation_email
@@ -52,5 +52,7 @@ class User < ActiveRecord::Base
 
   private
     def create_activation_digest
+      self.activation_token  = User.new_token
+      self.activation_digest = User.digest(activation_token)
     end
 end
