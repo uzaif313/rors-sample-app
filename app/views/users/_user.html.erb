@@ -3,6 +3,6 @@
   <%= link_to user.name.capitalize,user %>
 
   <% if current_user.admin?  %>
-    <%= link_to "", user, class:"glyphicon glyphicon-trash",method: :delete ,data:{confirm:"Are You Sure You Want To Delete #{user.name}"} %>
+    <%= link_to "", user, class:"glyphicon glyphicon-trash pull-right rmargin",method: :delete ,data:{confirm:"Are You Sure You Want To Delete #{user.name}"} %>
   <% end %>
 </li>
