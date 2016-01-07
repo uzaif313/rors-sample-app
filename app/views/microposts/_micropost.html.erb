@@ -1,0 +1,16 @@
+<li class=" list-group-item">
+  <%= gravatar_for micropost.user %>
+  <%=  micropost.content %>
+      <p>
+        Publish By :
+        <span class="text-muted">
+          <%= link_to micropost.user.name.capitalize, user_url(micropost.user)  %>
+        </span>
+      </p>
+      <p>
+        Publish at:
+        <span class="text-muted">
+          <%=time_ago_in_words(micropost.created_at) %>
+        </span>
+      </p>
+</li>

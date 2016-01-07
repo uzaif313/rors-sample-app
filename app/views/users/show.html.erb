@@ -1,6 +1,4 @@
-<%provide(:title,@user.name.capitalize)%>
-
-
+  <%provide(:title,@user.name.capitalize)%>
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
@@ -10,4 +8,22 @@
       </h1>
     </section>
   </aside>
+
+  <div class="col-md-6 users">
+    <% if(@user.microposts.any?)  %>
+      <h1 class="page-header">
+        Microposts  (<%= @microposts.count %>)
+      </h1>
+      <ol class="list-groups">
+        <%= render @microposts %>
+      </ol>
+      <div align="center">
+        <%= will_paginate @microposts  %>
+      </div>
+    <% else %>
+        <div class="alert alert-info">
+          There is no Post
+        </div>
+    <% end %>
+  </div>
 </div>

@@ -1,0 +1,9 @@
+      <h1>
+        <%= gravatar_for current_user %>
+        <%= current_user.name.capitalize %>
+      </h1>
+      <span><%= link_to "View my profie",current_user, class: "btn btn-primary" %></span>
+      <span>
+        <%= pluralize(current_user.microposts.count,"micropost") %>
+      </span>
+    

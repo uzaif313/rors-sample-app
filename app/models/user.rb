@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   # attr_accessor :remember_token ,:activation_token,:reset_token
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts,dependent: :destroy
+
   before_create :create_activation_digest
   before_save {self.email=email.downcase}
 
@@ -37,6 +39,10 @@ class User < ActiveRecord::Base
      return false if digest.nil?
      BCrypt::Password.new(digest).is_password?(token)
     # raise t.to_s
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   def activate
