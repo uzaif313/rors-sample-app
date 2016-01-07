@@ -19971,3 +19971,931 @@ Migrating to AddResetToUsers (20160106125417)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 09:52:27 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1488.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1735ms (Views: 1712.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 09:52:29 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 09:52:31 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (632.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 685ms (Views: 684.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2016-01-07 09:52:33 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/custom.self-fb32fa14bd3efeb65de8ef941f7d9f97fe2f759a932e1e3ecbcd84ce82b10461.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/account_activations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/script.self-c23d7bb28acf23fea891d286710c3507fca79ef02faffc02e46d49d678b9b76b.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 09:56:37 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 09:56:39 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 09:56:50 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (38.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 09:57:35 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 09:59:22 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:01:16 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:01:52 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:02:21 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (28.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:03:18 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:05:29 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 202ms (Views: 67.8ms | ActiveRecord: 2.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:05:47 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:06:29 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 83ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:06:54 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 82ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:06:56 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 68ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:07:19 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 1.3ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/sessions_controller.rb:19:in `[]'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:07:29 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.1ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/sessions_controller.rb:19:in `[]'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:07:49 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.8ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/sessions_controller.rb:19:in `[]'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:07:59 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.2ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/sessions_controller.rb:19:in `[]'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:10:40 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 1.2ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/sessions_controller.rb:19:in `[]'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:10:55 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:11:06 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 79ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:11:26 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:11:36 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 1.0ms)
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates"
+  * "/home/hardik/sample_app/app/views"
+  * "/home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/app/views"
+):
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:11:45 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 81ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:11:56 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:12:03 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 82ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:12:57 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `json' for #<SessionsController:0x007f57093d58d0>):
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (31.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:13:07 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 80ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:13:25 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 81ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:13:36 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:13:47 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KfEOI3yY39z9RZDVilcL5txJo6u/0PgoLqq7yC00XcPcUkULKaf/Fe8aLiyxHBX9LZWYCSLyjHJHUDV1Q4FGQ==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 84ms (Views: 0.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 10:13:51 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 255ms (Views: 254.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:13:58 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 69ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:14:05 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 82ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:14:21 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 82ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:14:29 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:14:55 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "uzaif@gmail.com"]]
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 1.3ms)
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x007f57082cfc20>):
+  app/controllers/sessions_controller.rb:21:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (34.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:15:08 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (52.7ms)[0m  UPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_digest", "$2a$10$JY.Jaydexe9ZOgl6P0AsjuTXoB.D/8TBXz86n06fZCeAZ96RA.c9."], ["updated_at", "2016-01-07 04:45:08.998363"], ["id", 1]]
+  [1m[36m (134.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 500 Internal Server Error in 564ms (ActiveRecord: 188.4ms)
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x0000000648c118>):
+  app/controllers/sessions_controller.rb:23:in `create'
+
+
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/hardik/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyf1Lj1Lg6IdGpiB1vm5TekdypKloUOk4vd99IVobYig8XgCnB9/ITlT5noyFJU1htq6fC/VynWLUJfOcNK55g==", "sessions"=>{"email"=>"uzaif@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "uzaif@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_digest", "$2a$10$bfqCkjqin1XkYe0iBrGrq.UAxw9N6zsciWw3bXGk.BKMxlWDy8OQe"], ["updated_at", "2016-01-07 04:45:15.569630"], ["id", 1]]
+  [1m[36m (93.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 243ms (ActiveRecord: 94.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 81.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/custom.self-fb32fa14bd3efeb65de8ef941f7d9f97fe2f759a932e1e3ecbcd84ce82b10461.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-07 10:15:15 +0530
+
+
+Started GET "/assets/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/script.self-c23d7bb28acf23fea891d286710c3507fca79ef02faffc02e46d49d678b9b76b.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/account_activations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:15:16 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-07 10:15:28 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0a6dnaguYOqcwqanIcHSjbaLmvXr/OLztEAhyUOWfDwKeBCxCXqcabiL2FzFLP712UzqG2GIayLd58vztiyoUg=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_digest", nil], ["updated_at", "2016-01-07 04:45:28.338964"], ["id", 1]]
+  [1m[36m (124.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 132ms (ActiveRecord: 124.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 10:15:28 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 10:15:46 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 83ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-01-07 10:15:47 +0530
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (256.8ms)
+  Rendered users/new.html.erb within layouts/application (307.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 377ms (Views: 376.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-01-07 10:16:06 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pxisaos3sMFyOKG3EdbZ0c97W5P3EMBikU9kMEHvYzJ8ziFGKmNMQlZx30z1O/WpoLwrfX1kSbP46I4KtFW3XA==", "user"=>{"name"=>"Rahul", "email"=>"rahul@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Join With us"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('rahul@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "activation_digest") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Rahul"], ["email", "rahul@gmail.com"], ["password_digest", "$2a$10$eq4EISRmN0ZoBm7zAwsmZufsa4nZ8Vm51OwCU8Lddv.DxcfqYXEsC"], ["created_at", "2016-01-07 04:46:06.687328"], ["updated_at", "2016-01-07 04:46:06.687328"], ["activation_digest", "$2a$10$M5zXU8fhcmW9HmsJCwXaG.mM6M4vq7bXg4EZnNfaARqiB0Yw7s1za"]]
+  [1m[36m (105.5ms)[0m  [1mcommit transaction[0m
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.0ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#account_activation: processed outbound mail in 280.0ms
+
+Sent mail to rahul@gmail.com (16.9ms)
+Date: Thu, 07 Jan 2016 10:16:07 +0530
+From: from@example.com
+To: rahul@gmail.com
+Message-ID: <568ded8f5c153_9002e2e4f42996e@hardik-desktop.mail>
+Subject: Account Activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_568ded8f582a3_9002e2e4f4298ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_568ded8f582a3_9002e2e4f4298ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+UserMailer#account_activation
+
+, find me in app/views/user_mailer/account_activation.text.erb
+
+
+----==_mimepart_568ded8f582a3_9002e2e4f4298ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Hi, <b>Rahul</b></h1>
+<h2>RoRs Sample App</h2>
+<p>
+  Welcome to RoRs Sample App Click on Link Below To Active your Account
+</p>
+<a class="btn btn-primary" href="http://127.0.0.1:3000/account_activations/oZPrRUbtMw5D9ZFPzWKmRA/edit?email=rahul%40gmail.com">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_568ded8f582a3_9002e2e4f4298ad--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 852ms (ActiveRecord: 106.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 10:16:07 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 10:16:10 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:16:22 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WPMa3/MDGRJaeaBYFazATuXCCQLai4K9Fcgk0k41tVCDJZfzUlflkX4w3qPxQew2igV57FD/C2x8b87ou49hPg==", "sessions"=>{"email"=>"rahul@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "rahul@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 10:16:22 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/account_activations/oZPrRUbtMw5D9ZFPzWKmRA/edit?email=rahul%40gmail.com" for 127.0.0.1 at 2016-01-07 10:17:21 +0530
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"rahul@gmail.com", "id"=>"oZPrRUbtMw5D9ZFPzWKmRA"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "rahul@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["activated", "t"], ["updated_at", "2016-01-07 04:47:21.530134"], ["id", 70]]
+  [1m[35m (120.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "activated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["activated_at", "2016-01-07 04:47:21.653307"], ["updated_at", "2016-01-07 04:47:21.653836"], ["id", 70]]
+  [1m[36m (131.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "activated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["activated_at", "2016-01-07 04:47:21.788134"], ["updated_at", "2016-01-07 04:47:21.788682"], ["id", 70]]
+  [1m[35m (130.6ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/users/70
+Completed 302 Found in 470ms (ActiveRecord: 385.3ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2016-01-07 10:17:21 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/custom.self-fb32fa14bd3efeb65de8ef941f7d9f97fe2f759a932e1e3ecbcd84ce82b10461.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/angular.self-d7c642a2239d433e219a2df47d65f3290d6ec49b679e42a3c8e8099a4a86d8f0.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/script.self-c23d7bb28acf23fea891d286710c3507fca79ef02faffc02e46d49d678b9b76b.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/account_activations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2016-01-07 10:17:22 +0530
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for 127.0.0.1 at 2016-01-07 10:17:34 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-07 10:17:44 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BbyMmBwvEpxTUStVZUeGJ0Fhw0Oxnvl9ZZV5+ET0xTbXPHkU7l+e+LzQN1v75v0U17JjzyESKrlFgQiT+Fhjcw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 10:17:44 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 10:17:53 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OI6LusB8MIT1dtFod/XQC2kzrcNPtFsuMT+eH0SWtUDqDn42Mgy84Br3zWbpVKs4/+ANT984iOoRK+90+DoTBQ==", "sessions"=>{"email"=>"rahul@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "rahul@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/users/70
+Completed 302 Found in 69ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2016-01-07 10:17:53 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-07 10:17:59 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9VEx0hMPGjKzWfzPncvYrzLlsk/438cN2bCmK3yVx0cn0cRe4X+WVlzY4MEDaqOcpDYSw2hTFMn5pNdAwDlhAg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 10:17:59 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
