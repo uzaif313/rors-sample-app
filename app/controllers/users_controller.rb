@@ -3,7 +3,11 @@ class UsersController < ApplicationController
   before_action :correct_user,only:[:edit,:update]
   before_action :admin_user ,only: :destroy
   def index
-    @users = User.paginate(:page=>params[:page],per_page:5)
+    if current_user.admin?
+      @users = User.paginate(:page=>params[:page],per_page:5)
+    else
+      @users = User.where(:activated=>true).paginate(:page=>params[:page],per_page:5)
+    end
   end
 
   def show
