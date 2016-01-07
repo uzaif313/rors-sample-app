@@ -27832,3 +27832,185 @@ Processing by SessionsController#new as HTML
   Rendered layouts/_header.html.erb (0.5ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 13:41:37 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 388ms (Views: 358.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2016-01-07 13:41:39 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2016-01-07 13:41:43 +0530
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQ3PqikJI5Gp6FAeQKZ7hqGX+FboAxms/M2Eg5ckc5lzjTom23mv9UZpTBDeBwC1N0RY2niPymjc2fXoK4jV3A==", "password_reset"=>"[FILTERED]", "commit"=>"Reset Password"}
+  [1m[35mUser Load (28.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "rahul@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (19.1ms)[0m  UPDATE "users" SET "reset_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["reset_digest", "$2a$10$P6D4ldhxIdkhYkFp5liU/OMCp6OR1tVVmQ.1CJjoff458500/45Y."], ["updated_at", "2016-01-07 08:11:44.018471"], ["id", 70]]
+  [1m[36m (147.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "reset_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_sent_at", "2016-01-07 08:11:44.187503"], ["updated_at", "2016-01-07 08:11:44.188071"], ["id", 70]]
+  [1m[35m (131.9ms)[0m  commit transaction
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (0.4ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#password_reset: processed outbound mail in 34.3ms
+
+Sent mail to rahul@gmail.com (8.6ms)
+Date: Thu, 07 Jan 2016 13:41:44 +0530
+From: from@example.com
+To: rahul@gmail.com
+Message-ID: <568e1dc0664f3_1af73fec2ae652c0278cd@hardik-desktop.mail>
+Subject: Reset Password
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_568e1dc063d88_1af73fec2ae652c027763";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_568e1dc063d88_1af73fec2ae652c027763
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+UserMailer#password_reset
+
+, find me in app/views/user_mailer/password_reset.text.erb
+
+
+----==_mimepart_568e1dc063d88_1af73fec2ae652c027763
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Password Reset</h1>
+<p>To Reset Password Please Click On the Below Given Link</p>
+<a href="http://127.0.0.1:3000/password_resets/YsF3voMfEl_pYjkfOaDJfw/edit?email=rahul%40gmail.com">Reset Password</a>
+<h4>Above Link Will be Expire in 2 Houre</h4>
+
+  </body>
+</html>
+
+----==_mimepart_568e1dc063d88_1af73fec2ae652c027763--
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 550ms (ActiveRecord: 328.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 13:41:44 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/YsF3voMfEl_pYjkfOaDJfw/edit?email=rahul%40gmail.com" for 127.0.0.1 at 2016-01-07 13:42:07 +0530
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"rahul@gmail.com", "id"=>"YsF3voMfEl_pYjkfOaDJfw"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "rahul@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 140ms (Views: 69.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/password_resets/YsF3voMfEl_pYjkfOaDJfw" for 127.0.0.1 at 2016-01-07 13:42:16 +0530
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QemvZ2bKdqwSjzeSoGKwM5Nrg8hsHcqAAsbIEOJAlJKTaVrrlLr6yP0OK5w+w8sABbgjRPyRGUQi0rl7Xuwy1w==", "email"=>"rahul@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change Password", "id"=>"YsF3voMfEl_pYjkfOaDJfw"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "rahul@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('rahul@gmail.com') AND "users"."id" != 70) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$Y4tTcmBH.aToDyqaUd0n1.bb7bzeWdwEm2qYScNGh/oZxtHzQgP/C"], ["updated_at", "2016-01-07 08:12:16.959259"], ["id", 70]]
+  [1m[35m (143.1ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/users/70
+Completed 302 Found in 284ms (ActiveRecord: 143.9ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2016-01-07 13:42:17 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 65.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-07 13:42:20 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KxTjCWs/0iiHvYWx8InpwjsCCqk/73wNIuvD/HVHaaL5lBaFmU9eTGg8mb9uKJLxrdGqJa9jr8kC/7KXyevP5w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 13:42:20 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-07 13:42:26 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5O5BUVDiKqIj1P2uBEZIj1qG80zx7M18BA4jfYe/sVk2brTdopKmxsxV4aCa5zO8zFVTwGFgHrgkGlIWOxMXHA==", "sessions"=>{"email"=>"rahul@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "rahul@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/users/70
+Completed 302 Found in 69ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2016-01-07 13:42:26 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-07 13:42:31 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TOzQ1KcPB3aE6LW7FFrQiAMV4eyci9a2ot2D+DOw9AuebCVYVX+LEmtpqbWK+6u7lcZBYAwHBXKCyfKTjxxSTg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-07 13:42:31 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.0ms)
