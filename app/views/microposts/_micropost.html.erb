@@ -7,6 +7,10 @@
           <%= link_to micropost.user.name.capitalize, user_url(micropost.user)  %>
         </span>
       </p>
+      <p width="50">
+        <%= image_tag micropost.picture_url if micropost.picture? %>
+      </p>
+
       <p>
         Publish at:
         <span class="text-muted">
