@@ -12,5 +12,10 @@
         <span class="text-muted">
           <%=time_ago_in_words(micropost.created_at) %>
         </span>
+        <% if current_user?(micropost.user) %>
+
+          <%= link_to "", micropost,method: :delete, data:{confirm:"Are Sure to Delete?"}, class: "glyphicon glyphicon-trash pull-right pull-right rmargin " %>
+        <% end %>
       </p>
+
 </li>
