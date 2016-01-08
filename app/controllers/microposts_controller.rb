@@ -4,10 +4,12 @@ class MicropostsController < ApplicationController
 
   def create
     @micropost=current_user.microposts.build(micropost_params)
+    # raise @micropost.inspect
     if @micropost.save
         flash[:success]="Post Created Successfully"
         redirect_to root_url
     else
+        @feed_items = []
         flash[:danger]="Unable to Publish Your Post"
         render "static_pages/home"
     end
