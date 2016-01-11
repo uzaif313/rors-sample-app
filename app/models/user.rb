@@ -4,6 +4,27 @@ class User < ActiveRecord::Base
   attr_accessor :remember_token, :activation_token, :reset_token
 
   has_many :microposts,dependent: :destroy
+  has_many :active_relationships, class_name:  "Relationship",
+           foreign_key: "follower_id",
+           dependent:   :destroy
+  has_many :following, through: :active_relationships, source: :followed
+
+  has_many :passive_relationships, class_name:  "Relationship",
+           foreign_key: "followed_id",
+           dependent:   :destroy
+  has_many :followers, through: :passive_relationships, source: :follower
+
+
+
+
+  # has_many :active_relationships,  class_name:  "Relationship",
+  # foreign_key: "follower_id",
+  # dependent:   :destroy
+  # has_many :passive_relationships, class_name:  "Relationship",
+  # foreign_key: "followed_id",
+  # dependent:   :destroy
+  # has_many :following, through: :active_relationships,  source: :followed
+  # has_many :followers, through: :passive_relationships, source: :follower
 
   before_create :create_activation_digest
   before_save {self.email=email.downcase}
@@ -18,6 +39,17 @@ class User < ActiveRecord::Base
   has_secure_password
 
   validates :password,presence:true,length:{minimum:6}
+  # has_many :active_relationships ,class_name: "Relationship",
+  #                               foreign_key: "follower_id",
+  #                               dependent:  :destroy
+  # has_many :passive_relationships ,class_name:"Relationship",
+  #                                 foreign_key: "followed_id",
+  #                                 dependent: :destroy
+  #
+  # has_many :following,through: :active_relationships,source: :followed_id
+  # has_many :followers,through: :passive_relationships,source: :follower_id
+
+
 
   def self.digest(string)
     cost=ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
@@ -72,7 +104,27 @@ class User < ActiveRecord::Base
 
   def password_reset_expired?
      reset_sent_at < 2.hours.ago
-   end
+  end
+
+  def follow(other_user)
+   active_relationships.create(followed_id: other_user.id)
+ end
+
+ def unfollow(other_user)
+   active_relationships.find_by(followed_id: other_user.id).destroy
+ end
+
+ def following?(other_user)
+   following.include?(other_user)
+ end
+
+
+ def feed
+   following_ids="SELECT followed_id from relationships where follower_id=:user_id"
+   Micropost.where("user_id IN (#{following_ids}) OR user_id = :user_id",user_id:id)
+end
+
+
   private
     def create_activation_digest
       self.activation_token  = User.new_token
